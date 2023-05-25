@@ -1,0 +1,31 @@
+﻿---
+ID: "6a0fa5a3-807c-4944-acdf-08d78fb670d8"
+Parent: "1c217437-526a-421a-99d9-9da877fe444c"
+Template: "c14bf746-030f-4e59-8594-395f6d299e61"
+Path: /sitecore/content/codeiddemoxm/codeiddemoxm/Settings/Shared Sites Settings
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230524T091603Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\radif@code.id
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\radif@code.id
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "93b4fe66-91c4-46b2-834e-8ba243447b23"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\radif@code.id
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230524T091603Z
