@@ -52,7 +52,7 @@ const SitecorePage = ({ notFound, componentProps, layoutData }: SitecorePageProp
 
 // This function gets called at build and export time to determine
 // pages for SSG ("paths", as tokenized array).
-export const getStaticPaths: GetStaticPaths = async (context) => {
+export const getStaticPaths: GetStaticPaths = async (_context) => {
   // Fallback, along with revalidate in getStaticProps (below),
   // enables Incremental Static Regeneration. This allows us to
   // leave certain (or all) paths empty if desired and static pages
@@ -61,8 +61,8 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   // ahead of time (non-development mode in this example).
   // See https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
 
-  let paths: StaticPath[] = [];
-  let fallback: boolean | 'blocking' = 'blocking';
+  const paths: StaticPath[] = [];
+  const fallback: boolean | 'blocking' = 'blocking';
 
   return {
     paths,

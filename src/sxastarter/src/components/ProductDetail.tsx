@@ -4,7 +4,6 @@ import {
   GetStaticComponentProps,
   useComponentProps,
   ComponentRendering,
-  GetServerSideComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 //import { MongoClient } from 'mongodb';
 import MeetupDetail from '../meetupComponents/meetups/MeetupDetail';
@@ -27,7 +26,7 @@ type ContentBlockProps = {
 };
 
 const ProductDetail = ({ fields, rendering }: ContentBlockProps): JSX.Element => {
-  const externalData = rendering.uid ? useComponentProps<ProductsEntity>(rendering.uid) : undefined;
+  const externalData = useComponentProps<ProductsEntity>(rendering.uid);
 
   return (
     <div>
@@ -44,10 +43,10 @@ const ProductDetail = ({ fields, rendering }: ContentBlockProps): JSX.Element =>
 };
 
 
-const fetchDummyProducts = (id: String) =>
+const fetchDummyProducts = (id: string) =>
   fetch('https://dummyjson.com/products/' + id).then((res) => res.json());
 
-export const getStaticProps: GetStaticComponentProps = async (context) => {
+export const getStaticProps: GetStaticComponentProps = async (_context) => {
   // const productId = context.params;
   // console.log(productId);
   // if (productId === '') {

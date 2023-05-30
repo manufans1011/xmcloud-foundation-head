@@ -1,8 +1,6 @@
 import {
   Text,
-  RichText,
   Field,
-  GetServerSideComponentProps,
   GetStaticComponentProps,
   useComponentProps,
   ComponentRendering,
@@ -31,7 +29,7 @@ type ContentBlockProps = {
 };
 
 const ProductList = ({ fields, rendering }: ContentBlockProps): JSX.Element => {
-  const externalData = rendering.uid ? useComponentProps<ProductsEntity>(rendering.uid) : undefined;
+  const externalData = useComponentProps<ProductsEntity>(rendering.uid);
 
   return (
     <div>
@@ -44,7 +42,7 @@ const ProductList = ({ fields, rendering }: ContentBlockProps): JSX.Element => {
 const fetchDummyProducts = () =>
   fetch('https://dummyjson.com/products').then((res) => res.json());
 
-export const getStaticProps: GetStaticComponentProps = async (rendering, layoutData, context) => {
+export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData, _context) => {
   // const client = await MongoClient.connect(
   //   'mongodb+srv://manufans1011:pass@word1@cluster0.uuflbqr.mongodb.net/?retryWrites=true&w=majority'
   // );
@@ -57,12 +55,6 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, layoutD
   // console.log(meetups)
   // client.close();
 
-  const post = await fetchDummyProducts();
-
-  return post;
-};
-
-export const getServerSideProps: GetServerSideComponentProps = async (rendering, layoutData) => {
   const post = await fetchDummyProducts();
 
   return post;
