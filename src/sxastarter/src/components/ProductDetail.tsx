@@ -61,11 +61,4 @@ export const getStaticProps: GetStaticComponentProps = async (context) => {
   return post;
 };
 
-export const getServerSideProps: GetServerSideComponentProps = async (rendering, layoutData, context) => {
-  console.log('ape', context.params)
-  const post = await fetchDummyProducts("1");
-
-  return post;
-};
-
 export default ProductDetail;
