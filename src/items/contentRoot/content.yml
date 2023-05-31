@@ -24,7 +24,7 @@ SharedFields:
     {8355EB8A-44EC-47FC-8FFD-6412C400A397}
 - ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
   Hint: __Read Only
-  Value: 1
+  Value: 
 - ID: "a0cb3965-8884-4c7a-8815-b6b2e5ced162"
   Hint: __Editors
   Value: |
@@ -33,7 +33,7 @@ SharedFields:
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: |
-    au|sitecore\ServicesAPI|pd|+item:read|^*|pe|+item:read|^*|ar|sitecore\Sitecore Client Site Managing|pe|+item:create|
+    au|sitecore\ServicesAPI|pd|+item:read|^*|pe|+item:read|^*|ar|sitecore\Sitecore Client Site Managing|pe|+item:create|au|sitecore\JssImport|pd|+item:write|+item:read|+item:create|pe|+item:write|+item:read|+item:create|
 - ID: "f2db8ba1-e477-41f5-8ef5-22eefa8d2f6e"
   Hint: __Enabled Views
   Value: |
@@ -64,11 +64,11 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "602ad6a5-3ab1-48d0-a23f-74a9a8cd7d69"
+      Value: "5b66a8c7-8175-49d9-87b2-5387a9f49f7b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\admin
+        sitecore\radif@code.id
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20221128T074116Z
+      Value: 20230531T005407Z

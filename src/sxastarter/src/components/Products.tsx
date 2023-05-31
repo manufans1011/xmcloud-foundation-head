@@ -28,7 +28,7 @@ type ContentBlockProps = {
   };
 };
 
-const ProductList = ({ fields, rendering }: ContentBlockProps): JSX.Element => {
+const Products = ({ fields, rendering }: ContentBlockProps): JSX.Element => {
   const externalData = useComponentProps<ProductsEntity>(rendering.uid);
 
   return (
@@ -60,4 +60,4 @@ export const getStaticProps: GetStaticComponentProps = async (_rendering, _layou
   return post;
 };
 
-export default ProductList;
+export default Products;
